@@ -19,26 +19,53 @@ At the end of this document is information on how to access the JavaDocs for thi
 
 ************************
 1. HOW TO COMPILE AND RUN
-  1.1 Compile this file into a java class structure
-  1.2 How to run the main class, once it's compiled
-  1.3 How to jar the structure for portability
-  1.4 How to run the jar, once it's been created.
+  1.1. Run the already provided jar file
+  1.2 Compile the source files
+  1.3 Run the program from the newly created class files
+  1.4 Create a runnable jar for portability
+  1.5 Run the jar, once it's been created
 
-from using ThTo run the jar file, download and extract the zip.
+PREREQUISITES: Java 1.8 or newer
 
-Change into the directory it creates.
-There is a subdirectory called files/mazes.txt in that directory, along with a file called Maze.jar.
+To run the jar file, download the file called maze-cjromb.jar
+At a command prompt, in the directory of the jar file, type 
+java -jar maze-cjromb.jar
 
-You must have Java 1.8 installed.
+To compile the program on your own, download and extract the zip called maze-cjromb-src.zip
+At the command prompt of the root level where you extracted the zip, type this in at a command prompt
+javac -d /target_directory src/com/maze/java/*.java
 
-At a command line, type:
+Target Directory is the location you'd like the compiled files to go.
 
-java -jar Maze.jar
+For example, if I want them on my desktop:
+javac -d /Users/cjromberger/Desktop/maze_target/ src/com/maze/java/*.java
 
-The source files are in the Maze_full.zip file.  They won't compile as is, because the org.jetbrains libraries are not included.  I will try to find those tomorrow and upload a new version of the source.  Those libraries were part of my IDE.
-The program requires Java 1.8 to run.
-All imported classes are included in the project, so none have to be natively on the user's machine.
-The maze file is also embedded in the java class structure.  More about that in the ABOUT section.
+(NOTE: Pay close attention to including or not including path slashes)
+
+To run the program:
+Change into the target directory
+At a command prompt, type:
+java com/maze/java/MazeMain
+
+To create a jar file from these classes, go to the same target directory from which you just ran the program.
+You will also need to know the path FROM THERE back to the directory where you unzipped the original source
+Example: Target = /Users/cjromberger/Desktop/maze_target
+Source = /Users/cjromberger/Desktop/maze_source
+
+Now at a command prompt from the target directory:
+
+jar cmvf /Users/cjromberger/Desktop/maze_source/src/META-INF/MANIFEST.MF maze_cjromb.jar com/maze/java/*
+
+The first directory contains the manifest, so the jar can be runnable.  The jar file in this example will go in the target directory where you are.  The third directory is the path from the target directory you're in, to the class files you just created during compilation in the previous step.
+
+To run this newly created jar, from a command prompt in the directory of the jar file:
+java -jar maze_cjromb.jar
+
+You should be able to move that maze_cjromb.jar file to another subdirectory or give it to someone else who has Java 1.8 and the JRE set up properly, and they should be able to run the same command:
+
+java -jar maze_cjromb.jar
+
+*****************************
 
 ABOUT THIS PROGRAM:
 These are some details about the goal of the program, the structure of the program, reasons for some choices made during its creation, and possible future improvements.
