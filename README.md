@@ -1,9 +1,9 @@
 # maze
 
-1. HOW TO COMPILE & RUN
-The first part of this file describes how to:
-1.1 Compile this file into a java class structure
-1.2. How to run the main class, once it's compiled
+<ol><li>1. HOW TO COMPILE & RUN</li>
+<p>The first part of this file describes how to:<p>
+<ol><li>Compile this file into a java class structure</li>
+<li>How to run the main class, once it's compiled</li>
 1.3. How to jar the structure for portability
 1.4. How to run the jar, once it's been created.
 
