@@ -1,28 +1,28 @@
 # maze
 
-<ol><li>1. HOW TO COMPILE & RUN</li>
-<p>The first part of this file describes how to:<p>
-<ol><li>Compile this file into a java class structure</li>
-<li>How to run the main class, once it's compiled</li>
-1.3. How to jar the structure for portability
-1.4. How to run the jar, once it's been created.
+1. HOW TO COMPILE & RUN
+The first part of this file describes how to:
+  1.1. Compile this file into a java class structure
+  1.2. How to run the main class, once it's compiled
+  1.3. How to jar the structure for portability
+  1.4. How to run the jar, once it's been created.
 
 2. PROGRAM & PROJECT INFORMATION
 The second part of this file has:
-2.1. An overview of the project requirements and program.
-2.2. Maze Search Algorithm choice information
-2.3. Structure of the program, including data storage choices.
-2.4. Information about hardcoded elements.
+  2.1. An overview of the project requirements and program.
+  2.2. Maze Search Algorithm choice information
+  2.3. Structure of the program, including data storage choices.
+  2.4. Information about hardcoded elements.
 
 3. ADDITIONAL DOCUMENTATION
 At the end of this document is information on how to access the JavaDocs for this project.
 
 ************************
 1. HOW TO COMPILE AND RUN
-1.1 Compile this file into a java class structure
-1.2. How to run the main class, once it's compiled
-1.3. How to jar the structure for portability
-1.4. How to run the jar, once it's been created.
+  1.1 Compile this file into a java class structure
+  1.2 How to run the main class, once it's compiled
+  1.3 How to jar the structure for portability
+  1.4 How to run the jar, once it's been created.
 
 from using ThTo run the jar file, download and extract the zip.
 
